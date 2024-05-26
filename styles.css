@@ -1,0 +1,143 @@
+/* paleta
+niebieski 193f8c
+zółty d74214 */
+
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: url('/assets/pattern.jpg') no-repeat center center;
+    background-size: cover;
+    height: 40vh; /* Mniejsza wysokość na mobile */
+    position: relative;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    padding: 10px;
+}
+
+.background img {
+    max-height: 50%; /* Mniejsza wysokość na mobile */
+}
+
+.logo img {
+    max-height: 10%; /* Mniejsza wysokość na mobile */
+}
+
+main {
+    padding: 10px;
+    text-align: center;
+}
+
+section {
+    margin: 20px 0;
+}
+
+#contact {
+    background-color: #f9f9f9;
+    padding: 10px;
+    text-align: center;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact label {
+    margin: 5px 0;
+}
+
+#contact input {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 90%;
+    max-width: 300px;
+}
+
+#contact button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #193f8c;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.socials a {
+    margin: 5px;
+}
+
+.socials img {
+    height: 24px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+/* Media queries for larger screens */
+@media (min-width: 600px) {
+    header {
+        height: 50vh; /* Większa wysokość na tabletach */
+    }
+
+    .background img {
+        max-height: 60%;
+    }
+
+    .logo img {
+        max-height: 15%;
+    }
+}
+
+@media (min-width: 1024px) {
+    header {
+        height: 60vh; /* Większa wysokość na desktopach */
+    }
+
+    .header-content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .background img {
+        max-height: 70%;
+    }
+
+    .logo img {
+height: 200px;    }
+
+    main {
+        padding: 20px;
+    }
+
+    section {
+        margin: 40px 0;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
