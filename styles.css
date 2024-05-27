@@ -2,10 +2,8 @@
 niebieski 193f8c
 zółty d74214 */
 
-
-
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans' , sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -36,7 +34,6 @@ header {
 }
 
 main {
-    padding: 10px;
     text-align: center;
 }
 
@@ -80,8 +77,13 @@ footer {
     color: #fff;
     padding: 10px;
     display: flex;
+    font-size: 35px;
+    font-family: hakuna regular;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
+    height: 15vh;
+
 }
 
 .socials a {
@@ -126,11 +128,12 @@ footer {
     }
 
     .logo img {
-height: 200px;    }
-
-    main {
-        padding: 20px;
+        height: 200px;    
     }
+
+    #bio {background-color: white;}
+
+    #music {background-color: #d74214;}
 
     section {
         margin: 40px 0;
@@ -139,5 +142,6 @@ height: 200px;    }
     footer {
         flex-direction: row;
         justify-content: space-between;
+        height: 40vh;
     }
 }
