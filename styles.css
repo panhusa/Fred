@@ -89,29 +89,35 @@ p{
     gap: 0 5vw; 
     grid-template-areas: 
     ". player"
-    "story player"
+    "bio player"
     ". ."; 
     z-index: 2;
 }
-
-.bio {
-    background-color: white;
-}
+iframe {
+    width: 100%;
+    aspect-ratio: 16/9;
+  }
+  
 .player { 
     grid-area: player; 
+    /* width: 85%; */
 }
-.story { 
-    grid-area: story; 
+.bio { 
+    grid-area: bio; 
+}
+.bck{
+    background-color: #d74214;
+    height:50vh;
+    margin-top: -50vh;
 }
 
 #contact {
     background-color: #d74214;
-    height: 75vh;
+    height:30vh;
     position: relative;
     text-align: center;    
-    margin-top: -50vh;
-    z-index: -1;
 }
+
 .contact{
     text-align: center;
     bottom: 0;
@@ -121,9 +127,14 @@ p{
     transform: translate(-50%, -50%);
 }
 .socials a {
+    color: #000000;
     margin: 15px;
     font-size: 50px;
+    transition: all 100ms ease 0s;
 
+}
+.socials a:hover{
+    color: #193f8c;
 }
 
 h2 {
@@ -131,6 +142,8 @@ h2 {
     margin: 10px;
     letter-spacing: 2px;
 }
+
+/* footer */
 footer{
     background-color: #193f8c;
     height: 40vh;
@@ -145,4 +158,108 @@ footer{
     font-family: "HakunaRegular";
     margin-top: 3rem;
     text-align: center;
+    letter-spacing: 2px;
+}
+/* Media queries for smartphones */
+@media (max-width: 767px) {
+    header {
+        height: 60vh;
+    }
+
+    .header-content {
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+    }
+
+    .photo {
+        height: auto;
+        padding-top: 10px;
+    }
+
+    .logo img {
+        height: 30vh;
+    }
+
+    h1 {
+        font-size: 2rem;
+        padding-bottom: 1rem;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        margin-top: -10vh;
+        margin-bottom: 2rem;
+        gap: 0 2vw;
+    }
+
+    iframe {
+        aspect-ratio: 16/9;
+    }
+
+    .bck {
+        height: 30vh;
+        margin-top: -30vh;
+    }
+
+    #contact {
+        height: 20vh;
+    }
+
+    .contact-info p {
+        font-size: 20px;
+        margin-top: 1rem;
+    }
+}
+
+/* Media queries for tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+    header {
+        height: 70vh;
+    }
+
+    .header-content {
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+    }
+
+    .photo {
+        height: auto;
+        padding-top: 15px;
+    }
+
+    .logo img {
+        height: 35vh;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        margin-top: -15vh;
+        margin-bottom: 3rem;
+        gap: 0 3vw;
+    }
+
+    iframe {
+        aspect-ratio: 16/9;
+    }
+
+    .bck {
+        height: 40vh;
+        margin-top: -40vh;
+    }
+
+    #contact {
+        height: 25vh;
+    }
+
+    .contact-info p {
+        font-size: 25px;
+        margin-top: 2rem;
+    }
 }
