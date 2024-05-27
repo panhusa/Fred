@@ -1,7 +1,7 @@
 /* paleta
 niebieski 193f8c
 zółty d74214 */
-
+* { margin:0; padding:0; }
 @font-face {
     font-family: "HakunaRegular";
     src: url("fonts/Hakuna\ Regular.ttf") format("truetype");
@@ -21,7 +21,7 @@ body {
 }
 
 header {
-    background: url("/assets/pattern.jpg");
+    background: url('assets/pattern.jpg');
     background-size: cover;
     height: 85vh;
     position: relative;
@@ -60,15 +60,16 @@ header {
     max-height: 100%;
 }
 .logo img {
-    height: 25em;
+    height: 40vh;
 }
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!header end */
 h1{
     font-size: 3rem;
     color: #d74214;
     text-align: left;
-    /* padding-top: 1rem; */
+  padding-bottom: 2rem; 
 }
+
 p{
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
@@ -78,14 +79,15 @@ p{
     text-align: justify;}
 
 .grid {
+    height: 80vh;
     margin-top: -25vh;
-    margin-bottom: 200px;
+    margin-bottom: 5rem;
     text-align: center;
     display: grid; 
-  grid-template-columns: 1fr 1fr; 
-  grid-template-rows: 0.8fr 1.2fr; 
-        gap: 0 5vw; 
-  grid-template-areas: 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 0.8fr 1.2fr; 
+    gap: 0 5vw; 
+    grid-template-areas: 
     ". player"
     "story player"
     ". ."; 
@@ -95,8 +97,12 @@ p{
 .bio {
     background-color: white;
 }
-.player { grid-area: player; }
-.story { grid-area: story; }
+.player { 
+    grid-area: player; 
+}
+.story { 
+    grid-area: story; 
+}
 
 #contact {
     background-color: #d74214;
