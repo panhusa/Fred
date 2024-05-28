@@ -133,6 +133,10 @@ h2 {
     letter-spacing: 2px;
 }
 
+.form {
+background-color: black;
+height: 45vh;
+}
 /* footer */
 footer{
     background-color: #193f8c;
