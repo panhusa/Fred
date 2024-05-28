@@ -150,26 +150,28 @@ h2 {
 
 /* form */
 .form {
+    background-color: black;
     padding: 20px;
     margin: 20px 0;
     border: 1px solid #ddd;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: white;
 }
 
-.contact-form h3 {
+.form h3 {
     font-size: 1.5em;
     margin-bottom: 15px;
 }
 
-.contact-form label {
+.form label {
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
 }
 
-.contact-form input[type="text"],
-.contact-form input[type="email"] {
+.form input[type="text"],
+.form input[type="email"] {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
@@ -177,8 +179,8 @@ h2 {
     border-radius: 3px;
 }
 
-.contact-form input[type="submit"] {
-    background-color: #4CAF50;
+.form input[type="submit"] {
+    background-color: #d74214;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -187,8 +189,8 @@ h2 {
     font-size: 1em;
 }
 
-.contact-form input[type="submit"]:hover {
-    background-color: #45a049;
+.form input[type="submit"]:hover {
+    background-color: #193f8c;
 }
 
 /* footer */
