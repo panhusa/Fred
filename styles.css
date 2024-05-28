@@ -44,15 +44,7 @@ header {
 .photo img {
     grid-column: 1;
     max-height: 100%;
-   /* --stroke-pos: 5px;
-    --stroke-neg: -5px;
-    --stroke-color: rgb(255, 255, 255);
-    filter: drop-shadow(var(--stroke-pos) 0 0 var(--stroke-color)) drop-shadow(var(--stroke-neg) 0 var(--stroke-color))
-        drop-shadow(0 var(--stroke-pos) 0 var(--stroke-color)) drop-shadow(0 var(--stroke-neg) 0 var(--stroke-color))
-        drop-shadow(var(--stroke-pos) var(--stroke-pos) 0 var(--stroke-color))
-        drop-shadow(var(--stroke-pos) var(--stroke-neg) 0 var(--stroke-color))
-        drop-shadow(var(--stroke-neg) var(--stroke-pos) 0 var(--stroke-color))
-        drop-shadow(var(--stroke-neg) var(--stroke-neg) 0 var(--stroke-color));*/
+  
 }
 .logo {
     /* display: grid; */
@@ -72,8 +64,8 @@ h1{
 
 p{
     font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
-    line-height: 22px;
+    font-size: 13px;
+    line-height: 24px;
     letter-spacing: 0px;
     margin: 0px;
     text-align: justify;}
