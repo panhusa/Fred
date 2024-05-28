@@ -1,0 +1,7 @@
+zajeb tam białe na czarnym tle tą nagłówkową czcionką na start
+
+i przyjebując się jeszcze detalicznie, zrobiłbym:
+p {
+font-size: 13px;
+line-height: 24px;
+}
