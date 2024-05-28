@@ -1,7 +1,11 @@
 /* paleta
 niebieski 193f8c
 zółty d74214 */
-* { margin:0; padding:0; }
+* {
+    margin: 0;
+    padding: 0;
+}
+
 @font-face {
     font-family: "HakunaRegular";
     src: url("fonts/Hakuna\ Regular.ttf") format("truetype");
@@ -11,13 +15,13 @@ zółty d74214 */
 
 body {
     font-family: "HakunaRegular", sans-serif;
-    margin:  0;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.ma-10vw{
-    margin:  0 10vw;
+.ma-10vw {
+    margin: 0 10vw;
 }
 
 header {
@@ -37,79 +41,88 @@ header {
     height: 100%;
     place-items: center;
 }
+
 .photo {
     height: 96.8%;
     padding-top: 25px;
 }
+
 .photo img {
     grid-column: 1;
     max-height: 100%;
-  
+
 }
+
 .logo {
     /* display: grid; */
     padding-bottom: 8em;
     max-height: 100%;
 }
+
 .logo img {
     height: 40vh;
 }
+
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!header end */
-h1{
+h1 {
     font-size: 3rem;
     color: #d74214;
     text-align: left;
-  padding-bottom: 2rem; 
+    padding-bottom: 2rem;
 }
 
-p{
+p {
     font-family: 'Open Sans', sans-serif;
     font-size: 13px;
     line-height: 24px;
     letter-spacing: 0px;
     margin: 0px;
-    text-align: justify;}
+    text-align: justify;
+}
 
 .grid {
     height: 80vh;
     margin-top: -25vh;
     margin-bottom: 5rem;
     text-align: center;
-    display: grid; 
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 0.8fr 1.2fr; 
-    gap: 0 5vw; 
-    grid-template-areas: 
-    ". player"
-    "bio player"
-    ". ."; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.8fr 1.2fr;
+    gap: 0 5vw;
+    grid-template-areas:
+        ". player"
+        "bio player"
+        ". .";
     z-index: 2;
 }
+
 iframe {
     width: 100%;
     aspect-ratio: 16/9;
-  }
-  
-.player { 
-    grid-area: player; 
 }
-.bio { 
-    grid-area: bio; 
+
+.player {
+    grid-area: player;
 }
-.bck{
+
+.bio {
+    grid-area: bio;
+}
+
+.bck {
     background-color: #d74214;
-    height:50vh;
+    height: 50vh;
     margin-top: -50vh;
 }
 
 #contact {
     background-color: #d74214;
-    height:30vh;
+    height: 30vh;
     position: relative;
-    text-align: center;    
+    text-align: center;
 }
 
-.contact{
+.contact {
     text-align: center;
     bottom: 0;
     position: absolute;
@@ -117,13 +130,15 @@ iframe {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 .socials a {
     color: #000000;
     margin: 15px;
     font-size: 50px;
     transition: all 100ms ease 0s;
 }
-.socials a:hover{
+
+.socials a:hover {
     color: #193f8c;
 }
 
@@ -134,11 +149,13 @@ h2 {
 }
 
 .form {
-background-color: black;
-height: 45vh;
+    background-color: black;
+    height: 45vh;
+    font-family: "HakunaRegular";
 }
+
 /* footer */
-footer{
+footer {
     background-color: #193f8c;
     height: 40vh;
     display: flex;
@@ -146,6 +163,7 @@ footer{
     flex-direction: column;
     align-items: center;
 }
+
 .footer-info p {
     color: #fff;
     font-size: 35px;
@@ -182,7 +200,7 @@ footer{
         padding-bottom: 1rem;
     }
 
-    .grid{
+    .grid {
         display: block;
         padding-top: 28vh;
     }
@@ -191,7 +209,7 @@ footer{
         height: 25vh;
         margin-top: -25vh;
     }
-   
+
     #contact {
         height: 20vh;
     }
@@ -200,22 +218,26 @@ footer{
         font-size: 20px;
         margin-top: 1rem;
     }
+
     h2 {
         font-size: 2rem;
     }
+
     .socials a {
         font-size: 25px;
     }
-    footer{
+
+    footer {
         height: 25vh;
     }
 }
 
 /* Media queries for tablets */
 @media (min-width: 768px) and (max-width: 1024px) {
-    html{
+    html {
         height: 100%;
     }
+
     header {
         height: 70vh;
     }
@@ -266,9 +288,11 @@ footer{
         font-size: 2rem;
         margin-top: 2rem;
     }
+
     h2 {
         font-size: 2rem;
     }
+
     .socials a {
         font-size: 25px;
     }
