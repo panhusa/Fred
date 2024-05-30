@@ -15,8 +15,6 @@ zółty d74214 */
 
 body {
     font-family: "HakunaRegular", sans-serif;
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
@@ -26,49 +24,57 @@ body {
 
 header {
     background: url('assets/pattern.jpg');
-    background-size: cover;
     height: 85vh;
-    position: relative;
-    margin: 0;
-    z-index: -1;
+    width: 100%;
 }
 
 .header-content {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: minmax(100px, auto);
-    background-size: cover;
-    height: 100%;
-    place-items: center;
+    height: 100%; 
 }
 
 .photo {
-    height: 96.8%;
-    padding-top: 25px;
+    height: 100%;
+    position: relative;
+    width: 50%;
 }
 
 .photo img {
-    grid-column: 1;
-    max-height: 100%;
+    height: 85%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+} 
 
-}
-
-.logo {
-    /* display: grid; */
-    padding-bottom: 8em;
-    max-height: 100%;
+ .logo {
+    position: absolute;
+    left: 50%;
+    top: 10%;
 }
 
 .logo img {
     height: 40vh;
 }
 
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!header end */
+.player {
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    width: 40%;
+    height: 75%;
+}
+
+/* !!!!!!!!!!!header end !!!!!!!!!*/
+.bio {
+    display: block;
+    width: 35%;
+    margin-bottom: 5vh;
+}
+
 h1 {
     font-size: 3rem;
     color: #d74214;
     text-align: left;
-    padding-bottom: 2rem;
+    padding: 1rem 0;
 }
 
 p {
@@ -76,39 +82,14 @@ p {
     font-size: 13px;
     line-height: 24px;
     letter-spacing: 0px;
-    margin: 0px;
+    margin: 15px 0px;
     text-align: justify;
 }
 
-.grid {
-    height: 80vh;
-    margin-top: -25vh;
-    margin-bottom: 5rem;
-    text-align: center;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.8fr 1.2fr;
-    gap: 0 5vw;
-    grid-template-areas:
-        ". player"
-        "bio player"
-        ". .";
-    z-index: 2;
-}
-
-iframe {
+.youtube{
     width: 100%;
-    aspect-ratio: 16/9;
+    
 }
-
-.player {
-    grid-area: player;
-}
-
-.bio {
-    grid-area: bio;
-}
-
 .bck {
     background-color: #d74214;
     height: 50vh;
@@ -152,31 +133,28 @@ h2 {
 .form {
     background-color: black;
     padding: 20px;
-    margin: 20px 0;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     color: white;
 }
 
 .form h3 {
     font-size: 1.5em;
     margin-bottom: 15px;
+    letter-spacing: 2px;
 }
 
 .form label {
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
+    letter-spacing: 2px;
+
 }
 
 .form input[type="text"],
 .form input[type="email"] {
-    width: 100%;
+    width: 50%;
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
 }
 
 .form input[type="submit"] {
@@ -217,21 +195,12 @@ footer {
     header {
         height: 40vh;
     }
-
-    .header-content {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-
-    .photo {
-        height: 80%;
-        padding-top: 4rem;
+    .logo {
+        left: 55%;
     }
 
     .logo img {
-        padding-top: 3rem;
-        height: 15vh;
+        height: 25vh;
     }
 
     h1 {
@@ -278,23 +247,17 @@ footer {
     }
 
     header {
-        height: 70vh;
+        height: 80vh;
     }
-
-    .header-content {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-
-    .photo {
-        height: 95%;
-        padding-top: 1rem;
+    .logo {
+        left: 50%;
     }
 
     .logo img {
-        padding-top: 3rem;
-        height: 35vh;
+        height: 40vh;
+    }
+    .empty{
+        height: 50px;
     }
 
     h1 {
