@@ -87,13 +87,17 @@ p {
 }
 
 .youtube-container{
-    height: 300px;
+    height: 10vw;
+}
+.youtube{
+    width: 100%;
+    aspect-ratio: 16/9;
 }
 
 .bck {
     background-color: #d74214;
     height: 50vh;
-    /* margin-top: -50vh; */
+    /* z-index: -1; */
 }
 
 #contact {
@@ -194,6 +198,7 @@ footer {
 @media (max-width: 767px) {
     header {
         height: 40vh;
+        position: relative;
     }
     .logo {
         left: 55%;
@@ -202,20 +207,23 @@ footer {
     .logo img {
         height: 25vh;
     }
+    .player{
+        position: absolute;
+        top: 40vh;
+    left: 0;
+    width: auto;
+    text-align: center;
+    margin: 0 10vw;
+
+    } 
 
     h1 {
         font-size: 2rem;
         padding-bottom: 1rem;
     }
 
-    .grid {
-        display: block;
-        padding-top: 28vh;
-    }
-
     .bck {
         height: 25vh;
-        margin-top: -25vh;
     }
 
     #contact {
@@ -256,30 +264,14 @@ footer {
     .logo img {
         height: 40vh;
     }
-    .empty{
-        height: 50px;
-    }
 
     h1 {
         font-size: 2.5rem;
-        padding-top: 4rem;
-    }
-
-    .grid {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        margin-top: -15vh;
-        margin-bottom: 3rem;
-        gap: 0 3vw;
-    }
-
-    iframe {
-        aspect-ratio: 16/9;
+        padding-top: 2rem;
     }
 
     .bck {
         height: 40vh;
-        margin-top: -40vh;
     }
 
     #contact {
