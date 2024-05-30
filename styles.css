@@ -189,7 +189,7 @@ footer {
     color: #fff;
     font-size: 35px;
     font-family: "HakunaRegular";
-    margin-top: 3rem;
+    /* margin-top: 3rem; */
     text-align: center;
     letter-spacing: 2px;
 }
@@ -275,7 +275,7 @@ footer {
     }
 
     #contact {
-        height: 35vh;
+        height: 20vh;
     }
 
     .footer-info p {
