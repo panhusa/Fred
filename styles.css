@@ -86,14 +86,14 @@ p {
     text-align: justify;
 }
 
-.youtube{
-    width: 100%;
-    
+.youtube-container{
+    height: 300px;
 }
+
 .bck {
     background-color: #d74214;
     height: 50vh;
-    margin-top: -50vh;
+    /* margin-top: -50vh; */
 }
 
 #contact {
