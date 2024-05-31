@@ -30,6 +30,7 @@ header {
 
 .header-content {
     height: 100%;
+    position: relative;
 }
 
 .photo {
@@ -39,7 +40,7 @@ header {
 }
 
 .photo img {
-    height: 85%;
+    height: 95%;
     position: absolute;
     left: 0;
     bottom: 0;
@@ -58,10 +59,11 @@ header {
 .player {
     position: absolute;
     left: 50%;
-    top: 55%;
-    width: 40%;
-    height: 75%;
+    top: 65%;
+    width: 50%;
+    height: auto;
 }
+
 
 /* !!!!!!!!!!!header end !!!!!!!!!*/
 .bio {
