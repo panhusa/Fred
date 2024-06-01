@@ -99,7 +99,6 @@ p {
 
 .bck {
     background-color: #d74214;
-    height: 50vh;
 }
 
 #contact {
@@ -107,14 +106,16 @@ p {
     height: 30vh;
     position: relative;
     text-align: center;
+    padding: 10px;
 }
 
 .contact {
-    bottom: 0;
+    bottom: 50;
     position: absolute;
     bottom: 0px;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 0);
+    margin-bottom: 5%;
 }
 
 .socials a {
@@ -236,13 +237,15 @@ footer {
     }
 
     .player {
-        position: absolute;
-        top: 40vh;
-        left: 0;
-        width: 77.5vw;
-        text-align: center;
-        margin: 0 10vw;
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 100%;
+        margin: 10px 0;
+    }
 
+    .player iframe {
+        height: auto;
     }
 
     h1 {
@@ -308,10 +311,6 @@ footer {
 
     .bck {
         height: 35vh;
-    }
-
-    #contact {
-        height: 20vh;
     }
 
     .footer-info p {
