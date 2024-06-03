@@ -16,6 +16,8 @@ zółty d74214 */
 body {
     font-family: "HakunaRegular", sans-serif;
     box-sizing: border-box;
+    background-color: #193f8c;
+
 }
 
 .ma-10vw {
@@ -180,6 +182,9 @@ h2 {
     /* Adjusts the width of the inputs */
     max-width: 300px;
     /* Sets a max-width for the inputs */
+    font-family: "HakunaRegular";
+    font-size: 2rem;
+
 }
 
 .form input[type="submit"] {

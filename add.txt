@@ -5,3 +5,40 @@ p {
 font-size: 13px;
 line-height: 24px;
 }
+
+wydaje mi się, że trochę przekombinowałeś próbując zrobić tak, żeby te dwa elementy miały tą samą wysokość, a niepotrzebnie bo w projekcie nie mają tej samej wysokości i default wystarczy: większy element decyduje o wielkości parenta i jedziemy dalej
+
+
+mobilki adaptują się zajebiście - o to chodziło, elementy pod sobą, ale zostawiłbym nakładajacy się patent i nie zmniejszałbym tego widgeta tak bardzo
+
+zobacz jak na www.chinto.rocks zrobiłem Spotify na mobilach - jest taki sam widget, ale na powiedzmy 3 tracki i się scrolluje
+www.chinto.rocks
+Jacek
+i zróbmy takie same marginesy między elementami
+
+tu możemy się też postarać o jeden rozmiar czcionki i takie same marginesy między elementami - ikonki i telefon+mail robią sie troche małe na mobilu, ale to też ci zaraz podrzucę
+Jacek
+Jacek Kaczmarek
+o tak o mogłoby to wyglądać
+Jacek
+Jacek Kaczmarek
+Jacek unsent a message
+Jacek
+zielone to guidelines na 1400px tej bazowej szerokości
+Jacek
+Jacek Kaczmarek
+mała zmiana tekstu nad ikonkami
+
+nie wiem jak ci się ułoży tekst w pierwszej linii formularza - zrobiłem dwie linie, ale mogą wyjść 3, głównie żeby obok tego największego kwadratu po lewej weszło minimum jedno słowo
+Jacek
+Jacek Kaczmarek
+jak masz jakieś pytania to wal śmiało, lepiej zapytać niż siedzieć nad czymś niepotrzebnie 😉
+Jacek
+Jacek Kaczmarek
+a i jeszcze drobnostka: ustaw proszę tło body na ten pattern - to czasem wystaje jak np jesteś na samej górze i scrollniesz mocno do góry - lepiej wygląda coś innego niż biały default 😉
+Jacek
+Jacek Kaczmarek
+a jak to coś rozjebie to chociaz ten niebieski 😃
+
+
+tło sprawdzić na całym ekranie
