@@ -1,15 +1,3 @@
-// window.addEventListener('scroll', function () {
-//     let scrollPosition = window.scrollY;
-//     let logo = document.querySelector('.logo img');
-
-//     // Calculate rotation degree based on scroll position
-//     let rotationDegree = scrollPosition % 360;
-
-//     // Apply rotation to the logo
-//     logo.style.transform = `rotate(${rotationDegree}deg)`;
-// });
-
-// player spotify
 function adjustPlayerHeight() {
     const bioElement = document.querySelector('.bio');
     const playerElement = document.getElementById('player');
@@ -18,23 +6,21 @@ function adjustPlayerHeight() {
 
     const bioHeight = bioElement.clientHeight;
     const headerHeight = headerContentElement.clientHeight;
+    const maxHeight = 700; 
 
-    if (window.innerWidth <= 767) {
-        playerElement.style.height = 'auto';
-        spotifyPlayerElement.style.height = 'auto';
-    } else {
-        // Calculate the height so the bottom of the player aligns with the bottom of the bio
+    if (window.innerWidth > 767) {
         const playerTop = headerHeight * 0.65;
         const newHeight = bioHeight + (headerHeight - playerTop);
 
-        // Apply the new height
-        playerElement.style.height = newHeight + 'px';
-        spotifyPlayerElement.style.height = newHeight + 'px';
+        const finalHeight = Math.min(newHeight, maxHeight);
+        playerElement.style.height = finalHeight + 'px';
+        spotifyPlayerElement.style.height = finalHeight + 'px';
     }
 }
 
 window.addEventListener('resize', adjustPlayerHeight);
 window.addEventListener('load', adjustPlayerHeight);
+
 
 // // youtube container
 function adjustHeights() {

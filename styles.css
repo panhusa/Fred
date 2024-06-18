@@ -12,11 +12,14 @@ zółty d74214 */
     font-weight: normal;
     font-style: normal;
 }
-
+html, body{
+    min-height: 100%;
+    
+}
 body {
     font-family: "HakunaRegular", sans-serif;
     box-sizing: border-box;
-    background-color: #193f8c;
+    /* background-color: #193f8c; */
     overflow-x: hidden;
 }
 
@@ -78,7 +81,6 @@ header {
     height: auto;
 }
 
-
 /* !!!!!!!!!!!header end !!!!!!!!!*/
 .bio {
     display: block;
@@ -95,7 +97,7 @@ h1 {
 
 p {
     font-family: 'Open Sans', sans-serif;
-    font-size: 13px;
+    font-size: 16px;
     line-height: 24px;
     letter-spacing: 0px;
     margin: 15px 0px;
@@ -150,12 +152,8 @@ h2 {
     width: 70vw;
 }
 
-/* form */
+/* Center the form */
 #form {
-    /* background-color: black;
-
-    position: relative;
-    text-align: center; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -163,6 +161,7 @@ h2 {
     height: 100%;
 }
 
+/* Style the form container */
 .form {
     text-align: center;
     background: black;
@@ -171,16 +170,15 @@ h2 {
 }
 
 .form h3 {
-    font-size: 1.5em;
-    margin-bottom: 15px;
+    font-size: 2em;
+    margin: 10px 0;
     letter-spacing: 2.5px;
     color: white;
 }
 
-/* Stylowanie formularza */
 .form label {
     display: block;
-    font-size: 1.5em;
+    font-size: 2em;
     margin: 10px 0;
     letter-spacing: 2px;
     color: white;
@@ -191,38 +189,25 @@ h2 {
     display: block;
     margin: 10px auto;
     padding: 10px;
-    width: calc(100% - 40px);
-    /* Adjusts the width of the inputs */
-    max-width: 300px;
-    /* Sets a max-width for the inputs */
     font-family: "HakunaRegular";
     font-size: 2rem;
+    width: calc(100% - 40px);
+    max-width: 300px;
 }
 
-/* Stylowanie dla "near: 'element input' '!'" */
 .location-wrapper {
     display: flex;
     align-items: center;
-    justify-content: center; /* Centruj elementy */
-}
-
-.location-wrapper label,
-.location-wrapper input[type="text"],
-.location-wrapper .exclamation {
-    display: inline-block;
-    vertical-align: middle;
+    justify-content: center;
 }
 
 .location-wrapper label {
-    margin-right: 55px; /* Zmniejszamy margines dla lepszego rozmieszczenia */
+    margin-right: 16px; 
 }
 
 .location-wrapper input[type="text"] {
-    width: 100%;
-    /* Makes sure the width is the same as other input fields */
-    max-width: 300px;
-    margin-left: 5px; /* Dodajemy margines po lewej stronie */
-    margin-right: 5px; /* Zmniejszamy margines dla lepszego rozmieszczenia */
+    margin: 0 5px; 
+    max-width: 300px; 
 }
 
 .location-wrapper .exclamation {
@@ -231,56 +216,8 @@ h2 {
     margin-left: 5px;
 }
 
-/* Ensure both input fields have the same width */
-.form input[type="text"],
-.form input[type="email"] {
-    width: calc(100% - 40px);
-    /* Adjusts the width of the inputs */
-    max-width: 300px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .form label {
-    display: block;
-    font-size: 1.5em;
-    margin: 10px 0;
-    letter-spacing: 2px;
-    left: 50%;
-    color: white;
-} */
-
-/* .form input[type="text"],
-.form input[type="email"] {
-    display: block;
-    margin: 10px auto;
-    padding: 10px;
-    width: calc(100% - 40px); */
-    /* Adjusts the width of the inputs */
-    /* max-width: 300px; */
-    /* Sets a max-width for the inputs */
-    /* font-family: "HakunaRegular";
-    font-size: 2rem;
-
-} */
-
 .form input[type="submit"] {
-    /* margin-top: 10px; */
+    margin-top: 10px;
     padding: 10px 20px;
     background-color: #d74214;
     color: white;
@@ -295,7 +232,6 @@ h2 {
 
 .form input[type="submit"]:hover {
     color: black;
-    font-size: 50px;
 }
 
 /* footer */
@@ -310,11 +246,12 @@ footer {
 
 .footer-info p {
     color: #fff;
-    font-size: 35px;
+    font-size: 40px;
     font-family: "HakunaRegular";
     /* margin-top: 3rem; */
     text-align: center;
     letter-spacing: 2px;
+    padding: 10px 0;     
 }
 
 /* Media queries for smartphones */
@@ -325,11 +262,11 @@ footer {
     }
 
     .logo {
-        left: 55%;
+        left: 60%;
     }
 
     .logo img {
-        height: 25vh;
+        height: 18vh;
     }
 
     .player {
@@ -338,37 +275,32 @@ footer {
         left: auto;
         width: 100%;
         margin: 10px 0;
+        height: 50vh;
+ 
     }
-
+    #player, #spotify-player {
+        height: 50vh;
+        max-height: 50vh !important;
+        /* position: relative; */
+        top: -5vh; 
+    }
+    
+    .bio {
+        display: block;
+        width: auto;
+        margin-top: 45vh;
+    }
     .player iframe {
         height: auto;
     }
 
     h1 {
-        font-size: 2rem;
         padding-bottom: 1rem;
     }
 
     .bck {
         height: 25vh;
     }
-
-    .bio {
-        display: block;
-        width: auto;
-        margin-top: 20vh;
-    }
-
-    #contact {
-        height: 20vh;
-        /* width: 100vw; */
-    }
-
-    .footer-info p {
-        font-size: 20px;
-        margin-top: 1rem;
-    }
-
     h2 {
         font-size: 2rem;
     }
@@ -377,15 +309,33 @@ footer {
         font-size: 35px;
     }
 
+    #contact {
+        height: 20vh;
+    }
+    .form input[type="submit"] {
+        font-size: 24px;
+    }
+    .form h3,
+    .form label  {
+        font-size: 20px;
+    }
+    .location-wrapper label {
+        margin-right: 8px; 
+    }
+    
     footer {
         height: 25vh;
+    }
+    .footer-info p {
+        font-size: 28px;
+        margin-top: 1rem;
     }
 }
 
 /* Media queries for tablets */
 @media (min-width: 768px) and (max-width: 1024px) {
     html {
-        height: 100%;
+        min-height: 100%;
     }
 
     header {
@@ -420,5 +370,9 @@ footer {
 
     .socials a {
         font-size: 35px;
+    }
+    #player, #spotify-player {
+        height: 50vh;
+        position: absolute;
     }
 }
