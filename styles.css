@@ -17,7 +17,7 @@ body {
     font-family: "HakunaRegular", sans-serif;
     box-sizing: border-box;
     background-color: #193f8c;
-
+    overflow-x: hidden;
 }
 
 .ma-10vw {
@@ -147,6 +147,7 @@ h2 {
     font-size: 3rem;
     margin: 10px;
     letter-spacing: 2px;
+    width: 70vw;
 }
 
 /* form */
@@ -176,12 +177,12 @@ h2 {
     color: white;
 }
 
+/* Stylowanie formularza */
 .form label {
     display: block;
     font-size: 1.5em;
-    margin-bottom: 10px;
+    margin: 10px 0;
     letter-spacing: 2px;
-    left: 50%;
     color: white;
 }
 
@@ -196,33 +197,111 @@ h2 {
     /* Sets a max-width for the inputs */
     font-family: "HakunaRegular";
     font-size: 2rem;
-
 }
 
+/* Stylowanie dla "near: 'element input' '!'" */
+.location-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centruj elementy */
+}
+
+.location-wrapper label,
+.location-wrapper input[type="text"],
+.location-wrapper .exclamation {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.location-wrapper label {
+    margin-right: 55px; /* Zmniejszamy margines dla lepszego rozmieszczenia */
+}
+
+.location-wrapper input[type="text"] {
+    width: 100%;
+    /* Makes sure the width is the same as other input fields */
+    max-width: 300px;
+    margin-left: 5px; /* Dodajemy margines po lewej stronie */
+    margin-right: 5px; /* Zmniejszamy margines dla lepszego rozmieszczenia */
+}
+
+.location-wrapper .exclamation {
+    font-size: 2rem;
+    color: white;
+    margin-left: 5px;
+}
+
+/* Ensure both input fields have the same width */
+.form input[type="text"],
+.form input[type="email"] {
+    width: calc(100% - 40px);
+    /* Adjusts the width of the inputs */
+    max-width: 300px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .form label {
+    display: block;
+    font-size: 1.5em;
+    margin: 10px 0;
+    letter-spacing: 2px;
+    left: 50%;
+    color: white;
+} */
+
+/* .form input[type="text"],
+.form input[type="email"] {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: calc(100% - 40px); */
+    /* Adjusts the width of the inputs */
+    /* max-width: 300px; */
+    /* Sets a max-width for the inputs */
+    /* font-family: "HakunaRegular";
+    font-size: 2rem;
+
+} */
+
 .form input[type="submit"] {
-    margin-top: 10px;
+    /* margin-top: 10px; */
     padding: 10px 20px;
-    background-color: black;
-    color: #193f8c;
+    background-color: #d74214;
+    color: white;
     border: 2px;
     border-radius: 5px;
     cursor: pointer;
     font-size: 50px;
     font-family: "HakunaRegular";
     letter-spacing: 2px;
-    transition: all 100ms ease 0s;
-
+    transition: all 100ms ease-out 0s;
 }
 
 .form input[type="submit"]:hover {
-    color: #d74214;
+    color: black;
     font-size: 50px;
 }
 
 /* footer */
 footer {
     background-color: #193f8c;
-    height: 30vh;
+    height: 45vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -281,7 +360,7 @@ footer {
     }
 
     #contact {
-        height: 15vh;
+        height: 20vh;
         /* width: 100vw; */
     }
 
@@ -291,11 +370,11 @@ footer {
     }
 
     h2 {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     .socials a {
-        font-size: 15px;
+        font-size: 35px;
     }
 
     footer {
@@ -340,6 +419,6 @@ footer {
     }
 
     .socials a {
-        font-size: 25px;
+        font-size: 35px;
     }
 }

@@ -9,15 +9,6 @@
 //     logo.style.transform = `rotate(${rotationDegree}deg)`;
 // });
 
-
-
-
-
-
-
-
-
-
 // player spotify
 function adjustPlayerHeight() {
     const bioElement = document.querySelector('.bio');
@@ -73,4 +64,4 @@ window.addEventListener('load', adjustHeights);
 // Initial call to set the height on page load
 adjustHeights();
 
-
+// youtubeContainer END!!!!!!!!!!!
