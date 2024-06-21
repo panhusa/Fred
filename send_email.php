@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Sprawdź, czy adres e-mail ma poprawny format
     if (!filter_var($email, FILTER_VALIDATE_EMAIL) === false) {
         // Adres e-mail, na który wiadomość zostanie wysłana (zamień na rzeczywisty adres e-mail Freda)
-        $to = 'fred@example.com';  // <-- Zamień na rzeczywisty adres e-mail Freda
+        $to = 'gas.dawid@gmail.com';  // <-- Zamień na rzeczywisty adres e-mail Freda
         $subject = 'New Performance Notification Request';
         $message = "Location: $location\nEmail: $email";
 

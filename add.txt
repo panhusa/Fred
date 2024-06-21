@@ -42,3 +42,17 @@ a jak to coś rozjebie to chociaz ten niebieski 😃
 
 
 tło sprawdzić na całym ekranie
+
+
+
+
+logo jest do zrobienia i spotify, reszta miód.
+logo chce zeby rosło od srodka obiektu a spotify jednak był w elemencie bio, albo obok, moge stworzyc np
+
+main
+    bio
+    player
+main
+i ustawic oba elementy obok siebie gdzie player troche nachodzi na header
+
+no i media zrobić do tego

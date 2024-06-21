@@ -6,10 +6,10 @@ function adjustPlayerHeight() {
 
     const bioHeight = bioElement.clientHeight;
     const headerHeight = headerContentElement.clientHeight;
-    const maxHeight = 600;
+    const maxHeight = 650;
 
     if (window.innerWidth > 767) {
-        const playerTop = headerHeight * 0.65;
+        const playerTop = headerHeight * 0.40;
         const newHeight = bioHeight + (headerHeight - playerTop);
 
         const finalHeight = Math.min(newHeight, maxHeight);

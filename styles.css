@@ -22,25 +22,19 @@ body {
 }
 
 .ma-10vw {
-    margin: 0 10vw;
+    margin: 0 8vw;
 }
 
 header {
-    background: url('assets/pattern.jpg') no-repeat center;
-    background-size: cover;
+    background: url('assets/pattern.jpg') no-repeat center/cover;
     height: 85vh;
     width: 100%;
 }
 
-.header-content {
-    height: 100%;
-    position: relative;
-}
-
+.header-content,
 .photo {
     height: 100%;
     position: relative;
-    width: 50%;
 }
 
 .photo img {
@@ -51,54 +45,53 @@ header {
 }
 
 .logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
     position: absolute;
     left: 50%;
-    top: 10%;
+    top: 8%;
 }
 
 .logo img {
-    min-width: 50%;
-    max-width: 55%;
-    object-fit: cover;
-    object-position: bottom;
+    /* min-width: 50%; */
+    max-width: 65%;
+    /* object-fit: cover; */
+    /* object-position: bottom; */
 }
 
 .player {
     position: absolute;
     left: 50%;
-    top: 75%;
+    top: 85%;
     width: 50%;
-    height: auto;
+    /* height: auto;  sprawdzić w script */
 }
 
 /* !!!!!!!!!!!header end !!!!!!!!!*/
 .bio {
     display: block;
-    width: 35%;
-    margin-bottom: 5vh;
+    width: 40%;
+    margin-bottom: 32px;
+    margin-right: 8px;
 }
 
 h1 {
-    font-size: 3rem;
+    font: 500 64px "HakunaRegular";
+    letter-spacing: 2px;
     color: #d74214;
-    text-align: left;
-    padding: 1rem 0;
+    padding: 64px 0 32px 0;
 }
 
 p {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0px;
+    font: 300 16px 'Open Sans', sans-serif;
     margin: 15px 0px;
     text-align: justify;
 }
 
 .youtube-container {
     height: 10vw;
+    padding-top: 16px;
 }
 
 .youtube {
@@ -110,26 +103,34 @@ p {
     background-color: #d74214;
 }
 
-#contact {
-    display: flex;
+/* contact !!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.contact {
     background-color: #d74214;
-    height: 30vh;
-    position: relative;
-    text-align: center;
-    padding: 10px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    padding: 32px 0;
 }
 
-.contact {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0);
+h2 {
+    font-size: 48px;
+    margin: 16px;
+    letter-spacing: 2px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.socials {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: 16px;
 }
 
 .socials a {
     color: #000000;
-    margin: 15px;
-    font-size: 50px;
+    font-size: 48px;
     transition: all 100ms ease 0s;
 }
 
@@ -137,25 +138,23 @@ p {
     color: #193f8c;
 }
 
-h2 {
-    font-size: 3rem;
-    margin: 10px;
-    letter-spacing: 2px;
-    width: 70vw;
-}
-
+/* end of .bio */
 #form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100%;
     height: 100%;
     background: black;
 }
 
+.location-wrapper,
+#form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .form {
     text-align: center;
-    padding: 20px 0;
+    padding: 24px 0;
     width: 100vw;
     box-sizing: border-box;
 }
@@ -166,53 +165,34 @@ h2 {
 
 .form label {
     display: block;
-    font-size: 2em;
-    margin: 10px 0;
+    font-size: 32px;
+    margin: 12px 0;
     letter-spacing: 2px;
     color: white;
 }
 
 .form input[type="text"],
 .form input[type="email"] {
+    margin: 0;
+
     display: block;
-    margin: 10px auto;
-    padding: 10px;
+    margin: 12px auto;
+    padding: 12px;
     font-family: "HakunaRegular";
-    font-size: 2rem;
+    font-size: 32px;
     width: calc(100% - 40px);
-    max-width: 300px;
-}
-
-.location-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.location-wrapper label {
-    margin-right: 16px;
-}
-
-.location-wrapper input[type="text"] {
-    margin: 0 5px;
-    max-width: 300px;
-}
-
-.location-wrapper .exclamation {
-    font-size: 2rem;
-    color: white;
-    margin-left: 5px;
+    max-width: 250px;
 }
 
 .form input[type="submit"] {
-    margin-top: 10px;
-    padding: 10px 20px;
+    margin-top: 12px;
+    padding: 12px 24px;
     background-color: #d74214;
     color: white;
     border: 2px;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
-    font-size: 50px;
+    font-size: 48px;
     font-family: "HakunaRegular";
     letter-spacing: 2px;
     transition: all 100ms ease-out 0s;
@@ -220,6 +200,20 @@ h2 {
 
 .form input[type="submit"]:hover {
     color: black;
+}
+
+.location-wrapper label {
+    margin-right: 16px;
+}
+
+.location-wrapper input[type="text"] {
+    margin: 0;
+}
+
+.location-wrapper .exclamation {
+    font-size: 32px;
+    color: white;
+    margin-left: 8px;
 }
 
 /* footer */
@@ -231,13 +225,12 @@ footer {
 }
 
 .footer-info {
-    padding: 50px 0;
+    padding: 32px 0;
 }
 
 .footer-info p {
     color: #fff;
-    font-size: 40px;
-    font-family: "HakunaRegular";
+    font: 200 48px "HakunaRegular";
     text-align: center;
     letter-spacing: 2px;
     padding: 10px 0;
@@ -260,14 +253,14 @@ footer {
         top: auto;
         left: auto;
         width: 100%;
-        margin: 10px 0;
+        margin: 12px 0;
         height: 50vh;
     }
 
     #player,
     #spotify-player {
         height: 50vh;
-        max-height: 50vh !important;
+        max-height: 50vh;
         /* position: relative; */
         top: -5vh;
     }
@@ -275,7 +268,7 @@ footer {
     .bio {
         display: block;
         width: auto;
-        margin-top: 45vh;
+        /* margin-top: 45vh; */
     }
 
     .player iframe {
@@ -283,7 +276,7 @@ footer {
     }
 
     h1 {
-        padding-bottom: 1rem;
+        padding-bottom: 16px;
     }
 
     .bck {
@@ -291,25 +284,20 @@ footer {
     }
 
     h2 {
-        font-size: 1.5rem;
+        font-size: 36px;
+    }
+
+    .socials {
+        justify-content: space-around;
     }
 
     .socials a {
         font-size: 35px;
     }
 
-    .contact {
-        height: 25vh;
-
-    }
-
+    .form label,
     .form input[type="submit"] {
-        font-size: 24px;
-    }
-
-    .form h3,
-    .form label {
-        font-size: 20px;
+        font-size: 32px;
     }
 
     .location-wrapper label {
@@ -321,16 +309,18 @@ footer {
     }
 
     .form h3 {
-        font-size: 2em;
-        margin: 10px 0;
-        letter-spacing: 2.5px;
+        font-size: 32px;
+        margin: 12px 0;
+        letter-spacing: 2px;
         color: white;
         display: block;
+        font-weight: 300;
     }
 
     .footer-info p {
-        font-size: 28px;
-        margin-top: 1rem;
+        font-size: 32px;
+        margin-top: 16px;
+        letter-spacing: 3px;
     }
 }
 
@@ -348,8 +338,8 @@ footer {
     }
 
     h1 {
-        font-size: 2.5rem;
-        padding-top: 2rem;
+        font-size: 48px;
+        padding-top: 32px;
     }
 
     .bck {
@@ -357,24 +347,25 @@ footer {
     }
 
     .footer-info p {
-        font-size: 2rem;
-        margin-top: 2rem;
+        font-size: 32px;
+        margin-top: 32px;
     }
 
     h2 {
-        font-size: 2rem;
+        font-size: 40px;
     }
 
     .socials a {
-        font-size: 35px;
+        font-size: 36px;
     }
 
     .form h3 {
-        font-size: 2em;
-        margin: 10px 0;
+        font-size: 32px;
+        margin: 12px 0;
         letter-spacing: 2.5px;
         color: white;
         display: block;
+        font-weight: 300;
     }
 
     .label.h3 {
