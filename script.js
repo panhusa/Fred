@@ -6,7 +6,7 @@ function adjustPlayerHeight() {
 
     const bioHeight = bioElement.clientHeight;
     const headerHeight = headerContentElement.clientHeight;
-    const maxHeight = 700; 
+    const maxHeight = 700;
 
     if (window.innerWidth > 767) {
         const playerTop = headerHeight * 0.65;
@@ -51,3 +51,13 @@ window.addEventListener('load', adjustHeights);
 adjustHeights();
 
 // youtubeContainer END!!!!!!!!!!!
+
+
+
+// links app
+
+function openFacebook(YougueyW) {
+    var appUrl = 'fb://profile/' + YougueyW;
+    var webUrl = 'https://www.facebook.com/' + YougueyW;
+    openUrl(appUrl, webUrl);
+}

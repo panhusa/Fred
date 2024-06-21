@@ -12,10 +12,13 @@ zółty d74214 */
     font-weight: normal;
     font-style: normal;
 }
-html, body{
+
+html,
+body {
     min-height: 100%;
-    
+
 }
+
 body {
     font-family: "HakunaRegular", sans-serif;
     box-sizing: border-box;
@@ -51,32 +54,27 @@ header {
     bottom: 0;
 }
 
-@keyframes rotate {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
-}
-
 .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     left: 50%;
     top: 10%;
-    transform-origin: center;
-    animation: none;
 }
 
 .logo img {
-    height: 40vh;
+    /* height: 40vh; */
+    min-width: 50%;
+    max-width: 55%;
+    object-fit: cover;
+    object-position: bottom;
 }
 
 .player {
     position: absolute;
     left: 50%;
-    top: 65%;
+    top: 75%;
     width: 50%;
     height: auto;
 }
@@ -202,12 +200,12 @@ h2 {
 }
 
 .location-wrapper label {
-    margin-right: 16px; 
+    margin-right: 16px;
 }
 
 .location-wrapper input[type="text"] {
-    margin: 0 5px; 
-    max-width: 300px; 
+    margin: 0 5px;
+    max-width: 300px;
 }
 
 .location-wrapper .exclamation {
@@ -251,7 +249,7 @@ footer {
     /* margin-top: 3rem; */
     text-align: center;
     letter-spacing: 2px;
-    padding: 10px 0;     
+    padding: 10px 0;
 }
 
 /* Media queries for smartphones */
@@ -265,9 +263,9 @@ footer {
         left: 60%;
     }
 
-    .logo img {
+    /* .logo img {
         height: 18vh;
-    }
+    } */
 
     .player {
         position: relative;
@@ -276,20 +274,23 @@ footer {
         width: 100%;
         margin: 10px 0;
         height: 50vh;
- 
+
     }
-    #player, #spotify-player {
+
+    #player,
+    #spotify-player {
         height: 50vh;
         max-height: 50vh !important;
         /* position: relative; */
-        top: -5vh; 
+        top: -5vh;
     }
-    
+
     .bio {
         display: block;
         width: auto;
         margin-top: 45vh;
     }
+
     .player iframe {
         height: auto;
     }
@@ -301,8 +302,9 @@ footer {
     .bck {
         height: 25vh;
     }
+
     h2 {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .socials a {
@@ -312,20 +314,24 @@ footer {
     #contact {
         height: 20vh;
     }
+
     .form input[type="submit"] {
         font-size: 24px;
     }
+
     .form h3,
-    .form label  {
+    .form label {
         font-size: 20px;
     }
+
     .location-wrapper label {
-        margin-right: 8px; 
+        margin-right: 8px;
     }
-    
+
     footer {
         height: 25vh;
     }
+
     .footer-info p {
         font-size: 28px;
         margin-top: 1rem;
@@ -342,13 +348,14 @@ footer {
         height: 80vh;
     }
 
-    .logo {
-        left: 50%;
-    }
+    /* .logo {
+        left: 60%;
 
-    .logo img {
-        height: 40vh;
-    }
+    } */
+
+    /* .logo img {
+        width: 40vh;
+    } */
 
     h1 {
         font-size: 2.5rem;
@@ -371,7 +378,9 @@ footer {
     .socials a {
         font-size: 35px;
     }
-    #player, #spotify-player {
+
+    #player,
+    #spotify-player {
         height: 50vh;
         position: absolute;
     }
