@@ -185,7 +185,7 @@ h2 {
 }
 
 .form input[type="submit"] {
-    margin-top: 12px;
+    margin: 12px 0;
     padding: 12px 24px;
     background-color: #d74214;
     color: white;
@@ -204,6 +204,7 @@ h2 {
 
 .location-wrapper label {
     margin-right: 16px;
+    padding: 32px 0;
 }
 
 .location-wrapper input[type="text"] {
@@ -233,7 +234,7 @@ footer {
     font: 200 48px "HakunaRegular";
     text-align: center;
     letter-spacing: 2px;
-    padding: 10px 0;
+    padding: 12px 0;
 }
 
 @media (max-width: 767px) {
