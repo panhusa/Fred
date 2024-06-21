@@ -51,13 +51,3 @@ window.addEventListener('load', adjustHeights);
 adjustHeights();
 
 // youtubeContainer END!!!!!!!!!!!
-
-
-
-// links app
-
-function openFacebook(YougueyW) {
-    var appUrl = 'fb://profile/' + YougueyW;
-    var webUrl = 'https://www.facebook.com/' + YougueyW;
-    openUrl(appUrl, webUrl);
-}
