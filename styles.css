@@ -259,7 +259,7 @@ footer {
 @media (max-width: 767px) {
     header {
         height: 40vh;
-        position: relative;
+      /*  position: relative;*/
     }
 
     .logo img {
