@@ -25,29 +25,38 @@ body {
     margin: 0 8vw;
 }
 
+/* header !!!!!!!!!!!!!!!! */
 header {
     background: url('assets/pattern.jpg') no-repeat center/cover;
     height: 85vh;
     width: 100%;
 }
 
-.header-content,
+.header-content {
+    display: flex;
+    height: 100%;
+}
+
 .photo {
     height: 100%;
     position: relative;
+
 }
 
 .photo img {
-    height: 95%;
+    /* max-height: 95%; */
     position: absolute;
-    left: 0;
+    /* left: 0; */
     bottom: 0;
+    /* max-width: 95%; */
+
 }
 
 .logo {
     /* display: flex; */
     /* align-items: center; */
     /* justify-content: center; */
+    margin-right: 8vw;
     position: absolute;
     left: 50%;
     top: 8%;
@@ -55,23 +64,32 @@ header {
 
 .logo img {
     /* min-width: 50%; */
-    max-width: 65%;
+    max-width: 75%;
     /* object-fit: cover; */
     /* object-position: bottom; */
 }
 
-.player {
-    position: absolute;
-    left: 50%;
-    top: 85%;
-    width: 50%;
-    /* height: auto;  sprawdzić w script */
+/* !!!!!!!!!!!header end !!!!!!!!!*/
+.main {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
-/* !!!!!!!!!!!header end !!!!!!!!!*/
+.player {
+    width: 50%;
+    flex-shrink: 1;
+}
+
+#player,
+#spotify-player {
+    height: 60vh;
+    margin: -24px 0;
+}
+
 .bio {
-    display: block;
-    width: 40%;
+    width: 45%;
     margin-bottom: 32px;
     margin-right: 8px;
 }
@@ -89,6 +107,7 @@ p {
     text-align: justify;
 }
 
+/* bio END!!!!!!!!!!!!!!!! */
 .youtube-container {
     height: 10vw;
     padding-top: 16px;
@@ -249,31 +268,28 @@ footer {
         width: 15%;
     }
 
+    .main {
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
     .player {
-        position: relative;
-        top: auto;
-        left: auto;
+        /* top: auto;
+        left: auto; */
         width: 100%;
-        margin: 12px 0;
+        margin: -16px 0;
         height: 50vh;
+        z-index: 2;
     }
 
     #player,
     #spotify-player {
-        height: 50vh;
-        max-height: 50vh;
-        /* position: relative; */
+        height: 45vh;
         top: -5vh;
     }
 
     .bio {
-        display: block;
         width: auto;
-        /* margin-top: 45vh; */
-    }
-
-    .player iframe {
-        height: auto;
     }
 
     h1 {
@@ -373,9 +389,14 @@ footer {
         display: none;
     }
 
-    #player,
+    /* #player,
     #spotify-player {
-        height: 50vh;
-        position: absolute;
+        height: 100vh;
+    } */
+
+    .player {
+        margin: -16px 0;
+        /* height: 50vh; */
+        z-index: 2;
     }
 }
