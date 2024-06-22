@@ -273,6 +273,7 @@ footer {
         flex-direction: row;
     }
 
+.photo img{display: none;}
     .player {
         /* top: auto;
         left: auto; */
@@ -353,7 +354,7 @@ footer {
         max-width: 65%; */
         width: 30%;
     }
-
+.photo img{display: none;}
     h1 {
         font-size: 48px;
         padding-top: 32px;
