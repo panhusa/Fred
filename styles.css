@@ -194,6 +194,7 @@ h2 {
     padding: 12px 24px;
     background-color: #d74214;
     color: white;
+    border: none;
     border-radius: 8px;
     cursor: pointer;
     font-size: 48px;
