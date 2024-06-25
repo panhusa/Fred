@@ -21,8 +21,17 @@ body {
     overflow-x: hidden;
 }
 
+/* global */
 .ma-10vw {
     margin: 0 8vw;
+}
+
+.ma-16 {
+    margin: 16px;
+}
+
+.ls-2 {
+    letter-spacing: 2px;
 }
 
 .flex {
@@ -75,13 +84,11 @@ header {
 
 .bio {
     width: 45%;
-    margin-bottom: 32px;
-    margin-right: 8px;
+    margin: 0 8px 32px 0;
 }
 
 h1 {
     font: 500 64px "HakunaRegular";
-    letter-spacing: 2px;
     color: #d74214;
     padding: 64px 0 32px 0;
 }
@@ -103,13 +110,13 @@ p {
     aspect-ratio: 16/9;
 }
 
-.bck {
+.bck,
+.contact {
     background-color: #d74214;
 }
 
 /* contact !!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 .contact {
-    background-color: #d74214;
     flex-direction: column;
     align-items: center;
     padding: 32px 0;
@@ -117,8 +124,6 @@ p {
 
 h2 {
     font-size: 48px;
-    margin: 16px;
-    letter-spacing: 2px;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -127,11 +132,10 @@ h2 {
 .socials {
     justify-content: space-evenly;
     width: 50%;
-    margin: 16px;
 }
 
 .socials a {
-    color: #000000;
+    color: black;
     font-size: 48px;
     transition: all 100ms ease 0s;
 }
@@ -175,7 +179,6 @@ h2 {
 
 .form input[type="text"],
 .form input[type="email"] {
-    margin: 0;
     display: block;
     margin: 12px auto;
     padding: 12px;
@@ -197,9 +200,7 @@ h2 {
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    font-size: 48px;
-    font-family: "HakunaRegular";
-    letter-spacing: 2px;
+    font: 48px "HakunaRegular";
     transition: all 100ms ease-out 0s;
 }
 
@@ -234,10 +235,9 @@ footer {
 }
 
 .footer-info p {
-    color: #fff;
+    color: white;
     font: 200 48px "HakunaRegular";
     text-align: center;
-    letter-spacing: 2px;
     padding: 12px 0;
 }
 
@@ -257,8 +257,8 @@ footer {
     }
 
     .main {
-        flex-wrap: wrap;
-        flex-direction: row;
+
+        flex-flow: row wrap;
     }
 
     .player {
@@ -295,7 +295,7 @@ footer {
     }
 
     .socials a {
-        font-size: 35px;
+        font-size: 36px;
     }
 
     .form label,
@@ -314,7 +314,6 @@ footer {
     .form h3 {
         font-size: 32px;
         margin: 12px 0;
-        letter-spacing: 2px;
         color: white;
         display: block;
         font-weight: 300;
