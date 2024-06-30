@@ -59,8 +59,8 @@ header {
 
 .logo {
     content: url(assets/Fredy-logo.png);
-    height: 70%;
-    margin-bottom: 64px;
+    height: 60%;
+    margin-bottom: 256px;
     max-width: 100%;
 }
 
@@ -79,7 +79,7 @@ header {
 #player,
 #spotify-player {
     height: 60vh;
-    margin: -24px 0;
+    margin: -64px 0;
 }
 
 .bio {
@@ -90,13 +90,14 @@ header {
 h1 {
     font: 500 64px "HakunaRegular";
     color: #d74214;
-    padding: 64px 0 32px 0;
+    padding: 44px 0 24px 0;
 }
 
 p {
     font: 300 16px 'Open Sans', sans-serif;
-    margin: 15px 0px;
+    margin: 14px 0px;
     text-align: justify;
+    line-height: 22px;
 }
 
 /* bio END!!!!!!!!!!!!!!!! */
@@ -177,6 +178,10 @@ h2 {
     color: white;
 }
 
+.form label.paragraf {
+    font-size: 16px;
+}
+
 .form input[type="text"],
 .form input[type="email"] {
     display: block;
@@ -190,17 +195,18 @@ h2 {
 
 .form input[type="email"] {
     max-width: 300px;
+    max-height: 16px;
 }
 
 .form input[type="submit"] {
     margin: 12px 0;
-    padding: 12px 24px;
+    padding: 14px 24px;
     background-color: #d74214;
     color: white;
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    font: 48px "HakunaRegular";
+    font: 36px "HakunaRegular";
     transition: all 100ms ease-out 0s;
 }
 
@@ -210,7 +216,7 @@ h2 {
 
 .location-wrapper label {
     margin-right: 16px;
-    padding: 32px 0;
+    /* padding: 32px 0; */
 }
 
 .location-wrapper input[type="text"] {
@@ -223,6 +229,10 @@ h2 {
     margin-left: 8px;
 }
 
+#location::placeholder {
+    color: #93ACBB;
+}
+
 /* footer */
 footer {
     background-color: #193f8c;
@@ -230,9 +240,9 @@ footer {
     align-items: center;
 }
 
-.footer-info {
+/* .footer-info {
     padding: 32px 0;
-}
+} */
 
 .footer-info p {
     color: white;
