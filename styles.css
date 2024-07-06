@@ -22,7 +22,7 @@ body {
 }
 
 /* global */
-.ma-10vw {
+.ma-8vw {
     margin: 0 8vw;
 }
 
@@ -74,12 +74,14 @@ header {
 .player {
     width: 50%;
     flex-shrink: 1;
+    position: relative;
+    top: -232px;
 }
 
 #player,
 #spotify-player {
     height: 60vh;
-    margin: -64px 0;
+    /* margin: -64px 0; */
 }
 
 .bio {
@@ -102,8 +104,9 @@ p {
 
 /* bio END!!!!!!!!!!!!!!!! */
 .youtube-container {
-    height: 10vw;
+    height: 8vw;
     padding-top: 16px;
+    margin-top: -232px;
 }
 
 .youtube {
@@ -179,7 +182,7 @@ h2 {
 }
 
 .form label.paragraf {
-    font-size: 16px;
+    font: 300 16px 'Open Sans', sans-serif;
 }
 
 .form input[type="text"],
@@ -240,15 +243,16 @@ footer {
     align-items: center;
 }
 
-/* .footer-info {
+.footer-info {
     padding: 32px 0;
-} */
+}
 
 .footer-info p {
     color: white;
     font: 200 48px "HakunaRegular";
     text-align: center;
     padding: 12px 0;
+    margin: 0;
 }
 
 @media (max-width: 768px) {
@@ -286,10 +290,15 @@ footer {
 
     .bio {
         width: auto;
+        margin-bottom: 0;
     }
 
     h1 {
-        padding-bottom: 16px;
+        padding: 16px;
+    }
+
+    .youtube-container {
+        margin-top: 0;
     }
 
     .bck {
