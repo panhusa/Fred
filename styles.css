@@ -64,6 +64,8 @@ body {
     top: 0;
     max-width: 100%;
 } */
+
+/* 2!!!!!!!!!!!!!!!!!!!!! */
 /* header {
     background: url('assets/pattern.jpg') no-repeat center/cover;
     height: 85vh;
@@ -153,7 +155,7 @@ p {
 /* bio END!!!!!!!!!!!!!!!! */
 .youtube-container {
     height: 8vw;
-    padding-top: 16px;
+    padding-top: 24px;
     margin-top: -232px;
 }
 
