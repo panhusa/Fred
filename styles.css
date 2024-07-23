@@ -38,6 +38,16 @@ body {
     display: flex;
 }
 
+#progressBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 5px;
+    background-color: #4caf50;
+    z-index: 1000;
+}
+
 /* header !!!!!!!!!!!!!!!! */
 /* header {
     background: url('assets/pattern.jpg') no-repeat center/cover;
