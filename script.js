@@ -1,25 +1,25 @@
-function adjustPlayerHeight() {
-    const bioElement = document.querySelector('.bio');
-    const playerElement = document.getElementById('player');
-    const headerContentElement = document.querySelector('.header-content');
-    const spotifyPlayerElement = document.getElementById('spotify-player');
+// function adjustPlayerHeight() {
+//     const bioElement = document.querySelector('.bio');
+//     const playerElement = document.getElementById('player');
+//     const headerContentElement = document.querySelector('.header-content');
+//     const spotifyPlayerElement = document.getElementById('spotify-player');
 
-    const bioHeight = bioElement.clientHeight;
-    const headerHeight = headerContentElement.clientHeight;
-    const maxHeight = 732;
+//     const bioHeight = bioElement.clientHeight;
+//     const headerHeight = headerContentElement.clientHeight;
+//     const maxHeight = 732;
 
-    if (window.innerWidth > 767) {
-        const playerTop = headerHeight * 0.40;
-        const newHeight = bioHeight + (headerHeight - playerTop);
+//     if (window.innerWidth > 767) {
+//         const playerTop = headerHeight * 0.40;
+//         const newHeight = bioHeight + (headerHeight - playerTop);
 
-        const finalHeight = Math.min(newHeight, maxHeight);
-        playerElement.style.height = finalHeight + 'px';
-        spotifyPlayerElement.style.height = finalHeight + 'px';
-    }
-}
+//         const finalHeight = Math.min(newHeight, maxHeight);
+//         playerElement.style.height = finalHeight + 'px';
+//         spotifyPlayerElement.style.height = finalHeight + 'px';
+//     }
+// }
 
-window.addEventListener('resize', adjustPlayerHeight);
-window.addEventListener('load', adjustPlayerHeight);
+// window.addEventListener('resize', adjustPlayerHeight);
+// window.addEventListener('load', adjustPlayerHeight);
 
 
 // // youtube container
