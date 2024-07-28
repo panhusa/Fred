@@ -10,10 +10,10 @@
     font-style: normal;
 }
 
-html,
+/* html,
 body {
     min-height: 100%;
-}
+} */
 
 body {
     font-family: "HakunaRegular", sans-serif;
@@ -38,7 +38,7 @@ body {
     display: flex;
 }
 
-#progressBar {
+/* #progressBar {
     position: fixed;
     top: 0;
     left: 0;
@@ -46,7 +46,7 @@ body {
     height: 5px;
     background-color: #4caf50;
     z-index: 1000;
-}
+} */
 
 header {
     background: url('assets/pattern.jpg') no-repeat center/cover;
@@ -92,11 +92,12 @@ header {
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: flex-start;
-    width: 84vw;
+    /* width: 84vw; */
     margin-left: 8vw;
     position: relative;
-    margin-bottom: 100px;
+    margin-bottom: 48px;
     overflow: visible;
+    min-height: 536px;
 }
 
 .player {
@@ -109,8 +110,6 @@ header {
 .player iframe {
     height: 736px;
 }
-
-
 
 .bio {
     width: 50%;
@@ -136,11 +135,12 @@ p {
 
 /* bio END!!!!!!!!!!!!!!!! */
 .background {
-    height: 500px;
+    /* height: 500px; */
+    /* padding-top: 50px; */
 }
 
 .youtube-container {
-    height: 1000px;
+    /* height: 1000px; */
     padding-top: 24px;
     /* margin-top: -232px; */
 }
@@ -148,6 +148,10 @@ p {
 .youtube {
     width: 100%;
     aspect-ratio: 16/9;
+}
+
+.bck {
+    height: 300px;
 }
 
 .bck,
@@ -274,11 +278,17 @@ h2 {
 footer {
     background-color: #193f8c;
     flex-direction: column;
+    justify-content: center;
+
     align-items: center;
+    height: 48vh;
 }
 
 .footer-info {
     padding: 32px 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer-info p {
@@ -290,7 +300,7 @@ footer {
 }
 
 @media (max-width: 768px) {
-    header {
+    /* header {
         height: 45vh;
     }
 
@@ -303,9 +313,9 @@ footer {
     .logo {
         height: 30vh;
         max-width: 60vw;
-    }
+    } */
 
-    .main {
+    /* .main {
 
         flex-flow: row wrap;
     }
@@ -326,9 +336,9 @@ footer {
     .bio {
         width: auto;
         margin-bottom: 0;
-    }
+    } */
 
-    h1 {
+    /* h1 {
         padding: 16px;
     }
 
@@ -338,7 +348,7 @@ footer {
 
     .bck {
         height: 25vh;
-    }
+    } */
 
     h2 {
         font-size: 36px;
@@ -383,9 +393,9 @@ footer {
 /* Media queries for tablets */
 @media (min-width: 768px) and (max-width: 1025px) {
 
-    header {
+    /* header {
         height: 70vh;
-    }
+    } */
 
 
     h1 {
