@@ -125,19 +125,41 @@ p {
 
 /* bio END!!!!!!!!!!!!!!!! */
 
+.background {
+    position: relative;
+    /* width: 100%; */
+}
+
 .youtube-container {
-    padding-top: 24px;
-    /* margin-top: -232px; */
+    position: relative;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+}
+
+.wbck {
+    position: absolute;
+    /* top: 0;
+    left: 0; */
+    /* width: 100%; */
+    height: 10vh;
+    background-color: white;
+    /* z-index: 1; */
 }
 
 .youtube {
+    position: relative;
     width: 100%;
-    aspect-ratio: 16/9;
+    height: 100%;
+    z-index: 2;
+    border: none;
 }
 
 .bck {
-    height: 600px;
-    margin-top: -600px;
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 10vh);
 }
 
 .bck,
@@ -203,7 +225,8 @@ h2 {
     color: white;
 }
 
-.form label.paragraf {
+.form label.paragraf,
+.form input[type="email"] {
     font: 300 16px 'Open Sans', sans-serif;
 }
 
@@ -221,6 +244,7 @@ h2 {
 .form input[type="email"] {
     max-width: 300px;
     max-height: 16px;
+
 }
 
 .form input[type="submit"] {
@@ -279,44 +303,21 @@ footer {
 }
 
 @media (max-width: 768px) {
-    /* header {
-        height: 45vh;
-    } */
 
-    /* .main {
-
-        flex-flow: row wrap;
-    }
-
-    .player {
-        width: 100%;
-        margin: -16px 0;
-        height: 50vh;
-        z-index: 2;
-    }
-
-    #player,
-    #spotify-player {
-        height: 45vh;
-        top: -5vh;
-    }
-
-    .bio {
-        width: auto;
-        margin-bottom: 0;
-    } */
-
-    /* h1 {
+    h1 {
         padding: 16px;
     }
 
-    .youtube-container {
+    /* .youtube-container {
         margin-top: 0;
     }
 
     .bck {
         height: 25vh;
     } */
+    .contact {
+        display: block;
+    }
 
     h2 {
         font-size: 36px;
@@ -360,19 +361,9 @@ footer {
 
 /* Media queries for tablets */
 @media (min-width: 768px) and (max-width: 1025px) {
-
-    /* header {
-        height: 70vh;
-    } */
-
-
     h1 {
         font-size: 48px;
         padding-top: 32px;
-    }
-
-    .bck {
-        height: 35vh;
     }
 
     .footer-info p {
@@ -399,12 +390,5 @@ footer {
 
     .label.h3 {
         display: none;
-    }
-
-
-    .player {
-        margin: -16px 0;
-        z-index: 2;
-        top: 30%
     }
 }
