@@ -66,10 +66,12 @@ header {
 }
 
 .photo {
-    background-image: url(assets/Fredy1.png);
+    /* background-image: url(assets/Fredy1.png);
     background-size: contain;
     background-position: bottom;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
+    background: url(assets/Fredy1.png) no-repeat bottom/contain;
+
     height: 100%;
     width: 50%;
     position: absolute;
@@ -193,24 +195,21 @@ h2 {
 }
 
 /* end of .bio */
-#form {
-    width: 100%;
-    height: 100%;
-    background: black;
-}
 
-.location-wrapper,
-#form {
+.location-wrapper {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
 }
 
 .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 24px 0;
-    width: 100vw;
-    box-sizing: border-box;
+    height: 50vh;
+    /* width: 100%; */
+    background: black;
 }
 
 .form h3 {
@@ -230,21 +229,22 @@ h2 {
     font: 300 16px 'Open Sans', sans-serif;
 }
 
-.form input[type="text"],
 .form input[type="email"] {
     display: block;
     margin: 12px auto;
     padding: 12px;
-    font-family: "HakunaRegular";
-    font-size: 32px;
     width: calc(100% - 40px);
-    max-width: 250px;
-}
-
-.form input[type="email"] {
     max-width: 300px;
     max-height: 16px;
+}
 
+.form input[type="text"] {
+    display: block;
+    /* margin: 12px auto; */
+    padding: 12px;
+    font: 32px "HakunaRegular";
+    width: calc(100% - 40px);
+    max-width: 250px;
 }
 
 .form input[type="submit"] {
@@ -265,7 +265,6 @@ h2 {
 
 .location-wrapper label {
     margin-right: 16px;
-    /* padding: 32px 0; */
 }
 
 .location-wrapper input[type="text"] {
@@ -306,22 +305,31 @@ footer {
 
     h1 {
         padding: 16px;
-    }
-
-    /* .youtube-container {
-        margin-top: 0;
-    }
-
-    .bck {
-        height: 25vh;
-    } */
-    .contact {
-        display: block;
+        text-align: center;
     }
 
     h2 {
         font-size: 36px;
     }
+
+    .main {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .player {
+        margin-top: -50px;
+        width: 100%;
+    }
+
+    .bio {
+        width: 100%;
+    }
+
+    .bio p {
+        padding-right: 0;
+    }
+
 
     .socials {
         justify-content: space-around;
@@ -330,6 +338,8 @@ footer {
     .socials a {
         font-size: 36px;
     }
+
+
 
     .form label,
     .form input[type="submit"] {
@@ -342,6 +352,10 @@ footer {
 
     .label.h3 {
         display: none;
+    }
+
+    .form {
+        flex-direction: column;
     }
 
     .form h3 {
@@ -377,6 +391,10 @@ footer {
 
     .socials a {
         font-size: 36px;
+    }
+
+    .form {
+        flex-direction: column;
     }
 
     .form h3 {
