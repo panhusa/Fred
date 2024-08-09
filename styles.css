@@ -10,11 +10,6 @@
     font-style: normal;
 }
 
-/* html,
-body {
-    min-height: 100%;
-} */
-
 body {
     font-family: "HakunaRegular", sans-serif;
     box-sizing: border-box;
@@ -53,10 +48,7 @@ header {
 }
 
 .logo {
-    background-image: url(assets/Fredy-logo.png);
-    background-size: contain;
-    background-position: bottom;
-    background-repeat: no-repeat;
+    background: url(assets/Fredy-logo.png) no-repeat bottom/contain;
     height: calc(100% - 232px);
     width: 50%;
     z-index: 1;
@@ -66,12 +58,7 @@ header {
 }
 
 .photo {
-    /* background-image: url(assets/Fredy1.png);
-    background-size: contain;
-    background-position: bottom;
-    background-repeat: no-repeat; */
     background: url(assets/Fredy1.png) no-repeat bottom/contain;
-
     height: 100%;
     width: 50%;
     position: absolute;
@@ -196,19 +183,16 @@ h2 {
 
 /* end of .bio */
 
-.location-wrapper {
+.location-wrapper,
+.form {
     display: flex;
-    /* justify-content: center; */
     align-items: center;
 }
 
 .form {
-    display: flex;
     justify-content: center;
-    align-items: center;
     text-align: center;
-    height: 50vh;
-    /* width: 100%; */
+    height: 44vh;
     background: black;
 }
 
@@ -218,7 +202,7 @@ h2 {
 
 .form label {
     display: block;
-    font-size: 32px;
+    font-size: 48px;
     margin: 12px 0;
     letter-spacing: 2px;
     color: white;
@@ -226,7 +210,12 @@ h2 {
 
 .form label.paragraf,
 .form input[type="email"] {
-    font: 300 16px 'Open Sans', sans-serif;
+    font: 300 12px 'Open Sans', sans-serif;
+}
+
+.form label.paragraf {
+    letter-spacing: 0;
+    margin-top: 24px;
 }
 
 .form input[type="email"] {
@@ -234,29 +223,31 @@ h2 {
     margin: 12px auto;
     padding: 12px;
     width: calc(100% - 40px);
-    max-width: 300px;
+    max-width: 280px;
     max-height: 16px;
 }
 
 .form input[type="text"] {
     display: block;
-    /* margin: 12px auto; */
     padding: 12px;
-    font: 32px "HakunaRegular";
+    font: 44px "HakunaRegular";
     width: calc(100% - 40px);
     max-width: 250px;
+    height: 54px;
 }
 
 .form input[type="submit"] {
-    margin: 12px 0;
+    margin: 26px 0;
     padding: 14px 24px;
     background-color: #d74214;
     color: white;
     border: none;
-    border-radius: 8px;
+    border-radius: 6px;
     cursor: pointer;
-    font: 36px "HakunaRegular";
+    font: 44px "HakunaRegular";
     transition: all 100ms ease-out 0s;
+    width: 200px;
+    height: 80px;
 }
 
 .form input[type="submit"]:hover {
@@ -272,20 +263,25 @@ h2 {
 }
 
 .location-wrapper .exclamation {
-    font-size: 32px;
+    font-size: 48px;
     color: white;
-    margin-left: 8px;
+    margin-left: 16px;
 }
 
 #location::placeholder {
-    color: #93ACBB;
+    color: #c5c5c6;
+}
+
+#email::placeholder {
+    color: #c5c5c6;
+    font-size: 12px;
 }
 
 /* footer */
 footer {
     background-color: #193f8c;
     justify-content: center;
-    height: 48vh;
+    height: 30vh;
 }
 
 .footer-info {
@@ -302,6 +298,9 @@ footer {
 }
 
 @media (max-width: 768px) {
+    header {
+        height: 50vh;
+    }
 
     h1 {
         padding: 16px;
@@ -330,6 +329,10 @@ footer {
         padding-right: 0;
     }
 
+    .contact {
+        height: auto;
+        padding: 20px 0;
+    }
 
     .socials {
         justify-content: space-around;
@@ -339,7 +342,19 @@ footer {
         font-size: 36px;
     }
 
+    .form {
+        flex-direction: column;
+        padding: 20px 0;
 
+    }
+
+    .form h3 {
+        font-size: 32px;
+        margin: 12px 0;
+        color: white;
+        display: block;
+        font-weight: 300;
+    }
 
     .form label,
     .form input[type="submit"] {
@@ -354,21 +369,10 @@ footer {
         display: none;
     }
 
-    .form {
-        flex-direction: column;
-    }
 
-    .form h3 {
-        font-size: 32px;
-        margin: 12px 0;
-        color: white;
-        display: block;
-        font-weight: 300;
-    }
 
     .footer-info p {
         font-size: 32px;
-        margin-top: 16px;
         letter-spacing: 3px;
     }
 }
@@ -380,11 +384,6 @@ footer {
         padding-top: 32px;
     }
 
-    .footer-info p {
-        font-size: 32px;
-        margin-top: 32px;
-    }
-
     h2 {
         font-size: 40px;
     }
@@ -393,8 +392,13 @@ footer {
         font-size: 36px;
     }
 
+    .contact {
+        height: auto;
+    }
+
     .form {
         flex-direction: column;
+        height: auto;
     }
 
     .form h3 {
@@ -406,7 +410,16 @@ footer {
         font-weight: 300;
     }
 
+    .form label {
+        font-size: 32px;
+    }
+
     .label.h3 {
         display: none;
+    }
+
+    footer {
+        height: auto;
+
     }
 }
