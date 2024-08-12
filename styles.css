@@ -14,7 +14,6 @@ body {
     font-family: "HakunaRegular", sans-serif;
     box-sizing: border-box;
     overflow-x: hidden;
-    background-color: aqua;
 }
 
 /* global */
@@ -69,22 +68,18 @@ header {
 
 /* !!!!!!!!!!!header end !!!!!!!!!*/
 .main {
-    flex-direction: row-reverse;
+    flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    /* margin-left: 8vw; */
     position: relative;
-    margin-bottom: 48px;
-    /* overflow: visible; */
-    min-height: 536px;
     padding: 0 8vw;
+    padding-bottom: 26px;
 }
 
 .player {
     width: 50%;
     float: left;
     margin-top: -200px;
-
 }
 
 .player iframe {
@@ -157,6 +152,7 @@ p {
     height: 34vh;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 h2 {
@@ -296,7 +292,7 @@ footer {
 
 @media (max-width: 768px) {
     header {
-        height: 50vh;
+        height: 44vh;
     }
 
     h1 {
@@ -368,8 +364,20 @@ footer {
         margin-right: 8px;
     }
 
-    .label.h3 {
+    /* .label.h3 {
         display: none;
+    } */
+
+    .form input[type="submit"] {
+        width: 150px;
+        height: 60px;
+    }
+
+    .form input[type="text"] {
+        font: 30px "HakunaRegular";
+        width: calc(100% - 40px);
+        max-width: 250px;
+        height: 30px;
     }
 
     footer {

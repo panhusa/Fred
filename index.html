@@ -20,7 +20,7 @@
             </div>
         </div>
     </header>
-    <div class="main ">
+    <div class="main flex">
         <div class="bio">
             <h1 class="ls-2">My story</h1>
             <p>Hi there, my name is Fredy Bony, I am an Ivorian born singer-songwriter with over 25 songs released
@@ -29,7 +29,6 @@
             <p>Hi there, my name is Fredy Bony, I am an Ivorian born singer-songwriter with over 25 songs released
                 independently. I performed in over three continents and in 3 languages including mandarin. I am a multi
                 instrumentalist artist who excels in the art of story telling.</p>
-
         </div>
         <div class="player" id="player">
             <iframe id="spotify-player" style="border-radius:12px"
@@ -38,15 +37,9 @@
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
             </iframe>
         </div>
-
     </div>
-
-
-
     <div class="background">
-        <!-- <div class="wbck"></div> -->
         <div class="bck"></div>
-
         <div class="youtube-container ma-8vw">
             <iframe class="youtube" src="https://www.youtube.com/embed/YVyXxcVK6n0?si=Ir1dPxkwMuwFRORl"
                 title="YouTube video player" frameborder="0"
@@ -54,9 +47,6 @@
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
     </div>
-
-
-
     <div class="contact flex">
         <div class="contact_items ma-8vw">
             <h2 class="ls-2 pad">Follow me on social media</h2>
@@ -70,12 +60,14 @@
             </div>
         </div>
     </div>
+
+
     <div class="form">
-        <h3 class="ls-2">Let me know when you perform</h3>
+        <!-- <h3 class="ls-2">Let me know when you perform near</h3> -->
         <form action="send_email.php" method="post">
             <div class="location-wrapper">
-                <label class="label h3" for="location">Let me know when you perform</label>
-                <label for="location">near</label>
+                <label class="label h3" for="location">Let me know when you perform near</label>
+                <!-- <label for="location">near</label> -->
                 <input placeholder="Prague" type="text" id="location" name="location" required>
                 <span class="exclamation">!</span>
             </div>
@@ -84,6 +76,8 @@
             <input type="submit" value="Submit!">
         </form>
     </div>
+
+
     <footer class="flex">
         <div class="footer-info flex">
             <p class="ls-2">+420 777 888 999</p>
