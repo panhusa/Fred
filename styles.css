@@ -166,13 +166,9 @@ h2 {
 
 /* end of .bio */
 
-.location-wrapper,
 .form {
     display: flex;
     align-items: center;
-}
-
-.form {
     justify-content: center;
     text-align: center;
     height: 44vh;
@@ -180,8 +176,31 @@ h2 {
     padding: 0 8vw;
 }
 
-.form h3 {
-    display: none;
+.location-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.city {
+    display: flex;
+    align-items: center;
+    /* width: auto; */
+}
+
+.form input[type="text"] {
+    /* display: block; */
+    padding: 12px;
+    font: 44px "HakunaRegular";
+    width: calc(100% - 40px);
+    max-width: 300px;
+    height: 50px;
+}
+
+.exclamation {
+    font-size: 48px;
+    color: white;
+    margin-left: 16px;
 }
 
 .form label {
@@ -192,14 +211,14 @@ h2 {
     color: white;
 }
 
-.form label.paragraf,
-.form input[type="email"] {
-    font: 300 12px 'Open Sans', sans-serif;
-}
-
 .form label.paragraf {
     letter-spacing: 0;
     margin-top: 24px;
+}
+
+.form label.paragraf,
+.form input[type="email"] {
+    font: 300 12px 'Open Sans', sans-serif;
 }
 
 .form input[type="email"] {
@@ -209,15 +228,6 @@ h2 {
     width: calc(100% - 40px);
     max-width: 280px;
     max-height: 16px;
-}
-
-.form input[type="text"] {
-    display: block;
-    padding: 12px;
-    font: 44px "HakunaRegular";
-    width: calc(100% - 40px);
-    max-width: 250px;
-    height: 54px;
 }
 
 .form input[type="submit"] {
@@ -240,16 +250,6 @@ h2 {
 
 .location-wrapper label {
     margin-right: 16px;
-}
-
-.location-wrapper input[type="text"] {
-    margin: 0;
-}
-
-.location-wrapper .exclamation {
-    font-size: 48px;
-    color: white;
-    margin-left: 16px;
 }
 
 #location::placeholder {
@@ -279,6 +279,53 @@ footer {
     text-align: center;
     padding: 12px 0;
     margin: 0;
+}
+
+/* Media queries for tablets */
+@media (min-width: 768px) and (max-width: 1025px) {
+    h1 {
+        font-size: 48px;
+        padding-top: 32px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    .socials a {
+        font-size: 36px;
+    }
+
+    .contact {
+        height: auto;
+        padding: 24px 0;
+    }
+
+    .form {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .location-wrapper {
+        margin-top: 20px;
+    }
+
+    .form h3 {
+        font-size: 32px;
+        margin: 12px 0;
+        letter-spacing: 2.5px;
+        color: white;
+        display: block;
+        font-weight: 300;
+    }
+
+    .form label {
+        font-size: 32px;
+    }
+
+    footer {
+        height: auto;
+    }
 }
 
 @media (max-width: 768px) {
@@ -319,6 +366,11 @@ footer {
         padding-right: 0;
     }
 
+    .bck {
+        height: calc(100% - 5vh);
+        top: 5vh;
+    }
+
     .contact {
         height: auto;
         padding: 20px 0;
@@ -332,8 +384,11 @@ footer {
         font-size: 36px;
     }
 
+    .city {
+        justify-content: center;
+    }
+
     .form {
-        flex-direction: column;
         padding: 20px;
         height: auto;
     }
@@ -355,10 +410,6 @@ footer {
         margin-right: 8px;
     }
 
-    .location-wrapper {
-        flex-direction: column;
-    }
-
     .form input[type="submit"] {
         width: 150px;
         height: 60px;
@@ -366,64 +417,16 @@ footer {
 
     .form input[type="text"] {
         font: 30px "HakunaRegular";
-        width: calc(100% - 40px);
         max-width: 250px;
         height: 30px;
     }
 
     footer {
-        height: auto;
+        height: 20vh;
     }
 
     .footer-info p {
         font-size: 32px;
         letter-spacing: 3px;
-    }
-}
-
-/* Media queries for tablets */
-@media (min-width: 768px) and (max-width: 1025px) {
-    h1 {
-        font-size: 48px;
-        padding-top: 32px;
-    }
-
-    h2 {
-        font-size: 40px;
-    }
-
-    .socials a {
-        font-size: 36px;
-    }
-
-    .contact {
-        height: auto;
-        padding: 24px 0;
-    }
-
-    .form {
-        flex-direction: column;
-        height: auto;
-    }
-
-    .form h3 {
-        font-size: 32px;
-        margin: 12px 0;
-        letter-spacing: 2.5px;
-        color: white;
-        display: block;
-        font-weight: 300;
-    }
-
-    .form label {
-        font-size: 32px;
-    }
-
-    .label.h3 {
-        display: none;
-    }
-
-    footer {
-        height: auto;
     }
 }

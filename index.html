@@ -63,13 +63,13 @@
 
 
     <div class="form">
-        <!-- <h3 class="ls-2">Let me know when you perform near</h3> -->
         <form action="send_email.php" method="post">
             <div class="location-wrapper">
                 <label class="label h3" for="location">Let me know when you perform near</label>
-                <!-- <label for="location">near</label> -->
-                <input placeholder="Prague" type="text" id="location" name="location" required>
-                <span class="exclamation">!</span>
+                <div class="city">
+                    <input placeholder="Prague" type="text" id="location" name="location" required>
+                    <span class="exclamation">!</span>
+                </div>
             </div>
             <label class="paragraf" for="email">My email address:</label>
             <input placeholder="Type here..." type="email" id="email" name="email" required>
